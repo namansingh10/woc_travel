@@ -155,12 +155,13 @@ nav ul li a {
 
 .text {
   position: absolute;
-  left: 4%;
-  top: 10%;
-  right: 5%;
+  left: 34%;
+  top: 40%;
   font-weight: bold;
-
+  font-size: 25px;
+  color: white;
 }
+
 
 .footer {
   padding: 20px;
