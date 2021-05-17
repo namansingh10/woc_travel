@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1263px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 8px; */
+}
+
+.logo {
+  margin-left: auto;
+}
+
+nav {
+  padding-left: 200px;
+  margin-right: auto;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.homepic1 {
+  filter: brightness(50%);
+  width: 1263px;
+  height: 580px;
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transform: translate(-50%, -50%);
+}
+
+.centered p {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
