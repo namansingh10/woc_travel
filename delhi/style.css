@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  /* padding: 8px; */
+}
+
+.logo {
+  margin-left: auto;
+}
+
+nav {
+  padding-left: 200px;
+  margin-right: auto;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.homepic {
+  /* z-index: -1; */
+  filter: brightness(50%);
+  height: 100%;
+  width: 100%;
+  /* height: 600px; */
+  /* width: 1263px; */
+  /* filter: blur(1px); */
+}
+
+.centered {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transform: translate(-50%, -50%);
+}
+
+.centered p {
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont2 {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.pic {
+  opacity: 0.8;
+}
+
+.bottom {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  font-size: 20px;
+}
+
+.where {
+  position: absolute;
+  left: 28%;
+  top: 30%;
+}
+
+.form-label {
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+#sec {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.bg {
+  background-image: url(images/holi.jpeg);
+}
+
+.form-select {
+  padding: 5px;
+  width: 100px;
+}
+
+/* .review {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+} */
+
+.small-container {
+  max-width: 1250px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.heading {
+  text-align: center;
+  font-family: Algerian;
+  font-size: 40px;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-3 {
+  flex-basis: 31%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.pict {
+  width: 370px;
+  height: 360px;
+  filter: brightness(50%);
+}
+
+.cont-1 {
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  left: 4%;
+  top: 10%;
+  right: 5%;
+  font-weight: bold;
+
+}
+
+.footer {
+  padding: 20px;
+  margin-top: 70px;
+  background: #333;
+  color: #fff;
+}
+
+.col-2 ul li {
+  list-style-type: none;
+  color: #fff;
+}
+
+.col-2 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.col-2 ul li b {
+  font-size: 20px;
+}
+
+.col-2 img {
+  padding: 20px;
+}
