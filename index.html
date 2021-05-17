@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -30,71 +32,107 @@
         </div>
     </header>
 
-    <div class="container">
-        <div class="homepic"><img src="images/home.jpg"></div>
-        <div class="centered">
-            <font size="8">TO TRAVEL IS TO LIVE</font><br>
-            <p>You Don't Need Magic to Disappear. All you need is a Destination.</p>
+
+    <section class="bg">
+        <div class="container">
+            <img src="images/home.jpg" class="homepic">
+            <div class="centered">
+                <font size="8">TO TRAVEL IS TO LIVE</font><br>
+                <p>You Don't Need Magic to Disappear. All you need is a Destination.</p>
+            </div>
         </div>
 
-    </div>
+
+        <div class="cont2">
+            <img src="images/holi.jpeg" class="pic">
+            <div class="bottom">
+                Find Your <br><b>HOLIDAY</b>
+            </div>
+            <div class="where">
+                <!-- <font size="3">Where: </font> -->
+                <form>
+
+                    <label for="when" class="form-label" id="sec">When:</label>
+                    <input type="date" id="when" required>
+                    <label>TO</label>
+                    <input type="date" id="when" required>
+
+                    </select>
+                    <label for="dest" class="form-label">Where:</label>
+                    <select id="dest" class="form-select" required>
+                        <option value="" disabled selected hidden>Choose...</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="goa">Goa</option>
+                    </select>
+                </form>
+            </div>
+        </div>
 
 
-    <div class="cont2">
-        <img src="images/holi.jpeg" class="pic">
-        <div class="bottom">
-            Find Your <br><b>HOLIDAY</b>
-        </div>
-        <div class="where">
-            <!-- <font size="3">Where: </font> -->
-            <form>
-                <label for="dest" class="form-label">Where:</label>
-                <select id="dest" class="form-select" required>
-                    <option value="" disabled selected hidden>Choose...<img src="images/where.png>" </option>
-                    <option value="delhi">Delhi</option>
-                    <option value="mumbai">Mumbai</option>
-                    <option value="goa">Goa</option>
-                </select>
-                <label for="when" class="form-label" id="sec">When:</label>
-                <input type="date" id="when" required>
-                <label>TO</label>
-                <input type="date" id="when" required>
-                <button type="submit" class="search">Search</button>
-                </select>
-            </form>
-        </div>
-    </div>
+    </section>
 
     <!-- <br><br>
 
     <p class="review">User Reviews</p> -->
 
     <div class="small-container">
-        <h1 class="heading" id="tshirt"><u class="under">Users Review</u></h1>
+        <h1 class="heading"><u class="under">Users Review</u></h1>
         <div class="row">
             <div class="col-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi dolorem excepturi sed
-                    rerum sunt, voluptatibus animi quasi, molestias dolorum beatae suscipit ad neque consequuntur itaque
-                    harum, quo culpa veniam!<br>Client Name</p>
+                <div class="cont-1">
+                    <img src="images/rev1.jpg" class="pict">
+                    <div class="text">
+                        <p>I visited Delhi for the first time and these people made it a perfect experience. It wouldn't
+                            have been possible without a guide and the guide i got was amazing with lots of experience.
+                            <br><br> Rakesh Kumar <br> (2021)</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi dolorem excepturi sed
-                    rerum sunt, voluptatibus animi quasi, molestias dolorum beatae suscipit ad neque consequuntur itaque
-                    harum, quo culpa veniam!<br>Client Name</p>
+                <div class="cont-1">
+                    <img src="images/rev2.jpg" class="pict">
+                    <div class="text">
+                        <p>Amazing experience with these guys. Good facility of selection of hotels and guides for Goa.
+                            Checking-in to the hotel was smooth and easy thanks to WEBSITE NAME. <br><br> Sanjay Patil
+                            <br>
+                            (2021)
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
             <div class="col-3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus commodi dolorem excepturi sed
-                    rerum sunt, voluptatibus animi quasi, molestias dolorum beatae suscipit ad neque consequuntur itaque
-                    harum, quo culpa veniam!<br>Client Name</p>
-                <!-- <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div> -->
+                <div class="cont-1">
+                    <img src="images/rev3.jpg" class="pict">
+                    <div class="text">
+                        <p>I went on a 5-day trip to Mumbai. I trusted this new startup with my trip and I am happy that
+                            I took the right decision. Don't think much just book with WEBSITE NAME.<br><br> Shreya
+                            Mishra <br> (2020)</p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
