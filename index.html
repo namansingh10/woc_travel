@@ -22,8 +22,8 @@
             </div>
             <nav>
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="">Pilgrimage</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pilgrimage.html">Pilgrimage Travel</a></li>
                     <li><a href="">Contact Us</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Sign In</a></li>
@@ -57,25 +57,27 @@
                     <label>TO</label>
                     <input type="date" id="when" required>
 
-                    </select>
                     <label for="dest" class="form-label">Where:</label>
                     <select id="dest" class="form-select" required>
-                        <option value="" disabled selected hidden>Choose...</option>
-                        <option value="delhi">Delhi</option>
-                        <option value="mumbai">Mumbai</option>
-                        <option value="goa">Goa</option>
+                        <option value="0" disabled selected hidden>Choose...</option>
+                        <option value="delhi.html">Delhi</option>
+                        <option value="mumbai.html">Mumbai</option>
+                        <option value="goa.html">Goa</option>
                     </select>
                 </form>
             </div>
         </div>
-
-
     </section>
-
-    <!-- <br><br>
-
-    <p class="review">User Reviews</p> -->
-
+    
+    <script type="text/javascript">
+        window.onload = function () {
+            var combo = document.getElementById('dest');
+            combo.onchange = function () {
+                window.open(this.value, '_blank');
+            }
+        }
+    </script>
+    
     <div class="small-container">
         <h1 class="heading"><u class="under">Users Review</u></h1>
         <div class="row">
