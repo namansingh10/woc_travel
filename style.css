@@ -84,27 +84,22 @@ nav ul li a {
 }
 
 .form-label {
-  padding: 40px 20px;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+#sec {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.bg {
+  background-image: url(images/holi.jpeg);
 }
 
 .form-select {
   padding: 5px;
   width: 100px;
-  /* display: inline-block; */
-}
-
-#sec {
-  padding-left: 50px;
-}
-
-.search {
-  padding: 13px 20px 13px 20px;
-  font-size: 15px;
-  margin-left: 60px;
-  background-color: rgb(73, 170, 138);
-  color: white;
-  border: none;
-  border-radius: 4px;
 }
 
 /* .review {
@@ -114,7 +109,7 @@ nav ul li a {
 } */
 
 .small-container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -124,7 +119,8 @@ nav ul li a {
   text-align: center;
   font-family: Algerian;
   font-size: 40px;
-  padding: 50px;
+  padding: 40px;
+  margin-top: 50px;
 }
 
 .row {
@@ -134,15 +130,35 @@ nav ul li a {
 }
 
 .col-3 {
-  flex-basis: 30%;
+  flex-basis: 31%;
   min-width: 250px;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 
+.pict {
+  width: 370px;
+  height: 360px;
+  filter: brightness(50%);
+}
+
+.cont-1 {
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+}
+
+.text {
+  position: absolute;
+  left: 4%;
+  top: 10%;
+  right: 5%;
+}
+
 .footer {
   padding: 20px;
-  margin-top: 100px;
+  margin-top: 70px;
   background: #333;
   color: #fff;
 }
