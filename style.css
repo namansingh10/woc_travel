@@ -147,6 +147,12 @@ nav ul li a {
   text-align: left;
   color: white;
   font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.cont-1:hover
+{
+  transform: scale(1.05);
 }
 
 .text {
@@ -180,3 +186,4 @@ nav ul li a {
 .col-2 img {
   padding: 20px;
 }
+
