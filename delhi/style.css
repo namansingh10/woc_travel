@@ -144,6 +144,11 @@ nav ul li a {
   width: 370px;
   height: 360px;
   filter: brightness(50%);
+  transition: transform 0.2s ease;
+}
+
+.pict:hover{
+  transform: scale(1.05);
 }
 
 .cont-1 {
