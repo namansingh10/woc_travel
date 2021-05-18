@@ -238,3 +238,13 @@ input
 {
     padding: 2% 2% 2% 2%;
 }
+
+#bg
+{
+  background-image: url("bg4.jpg");
+}
+
+#reg:hover
+{
+  font-weight: bold;
+}
