@@ -11,27 +11,36 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  background-color: #333;
   /* padding: 8px; */
 }
 
 .logo {
-  margin-left: auto;
+  margin-left: 10px;
+  float: left;
 }
 
 nav {
-  padding-left: 250px;
-  margin-right: auto;
+	float:right;
+  overflow: auto;
+  display: flex;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
+nav a {
+  float: right;
   text-decoration: none;
-  color: #000;
+  display: block;
+  color: #fff;
+  height:50px;
+  text-align: center;
+  top: 3px;
+  padding: 10px 10px;
+  
+}
+nav a:hover {
+	background-color: #ddd;
+	color: black;
 }
 
 .container {
@@ -43,8 +52,8 @@ nav ul li a {
 .homepic {
   /* z-index: -1; */
   filter: brightness(80%);
-  height: 590px;
-  width: 1263px;
+  height: 650px;
+  width: 98%;
   /* filter: blur(1px); */
 }
 
@@ -115,7 +124,11 @@ nav ul li a {
   align-items: center;
   justify-content: space-around;
 }
-
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .col-3 {
   flex-basis: 31%;
   min-width: 250px;
@@ -131,17 +144,22 @@ nav ul li a {
 
 .cont-1 {
   position: relative;
-  text-align: left;
+  text-align: centered;
   color: white;
   font-size: 18px;
 }
 
-.text {
+.cont-1:hover{
+	transform: scale(1.1);
+}
+
+.text p {
   position: absolute;
-  left: 4%;
-  top: 10%;
-  right: 5%;
+  text-align: center;
+  left: 34%;
+  top: 40%;
   color: white;
+  font-size: 40px;
 }
 
 .footer {
@@ -151,6 +169,9 @@ nav ul li a {
   color: #fff;
 }
 
+.col-2 {
+	padding: 20px;
+}
 .col-2 ul li {
   list-style-type: none;
   color: #fff;
@@ -165,6 +186,20 @@ nav ul li a {
   font-size: 20px;
 }
 
-.col-2 img {
+.col-1 img {
   padding: 20px;
+}
+
+/*Responsive layout when screen less than 700px */
+@media screen and (max-width: 700px) {
+	.row{
+		flex-direction:column;
+	}
+	.navbar {
+		flex-direction: column;
+	}
+	nav {
+		flex-direction:column;
+		width: 100%;
+	}
 }
