@@ -21,14 +21,15 @@ body {
   float: left;
 }
 
-nav {
+.navbar nav {
+	position:sticky;
 	float:right;
+	left: 60%;
   overflow: auto;
   display: flex;
 }
 
-nav a {
-  float: right;
+.navbar nav a {
   text-decoration: none;
   display: block;
   color: #fff;
@@ -52,8 +53,8 @@ nav a:hover {
 .homepic {
   /* z-index: -1; */
   filter: brightness(80%);
-  height: 650px;
-  width: 98%;
+  height: 640px;
+  width: 100%;
   /* filter: blur(1px); */
 }
 
@@ -85,7 +86,7 @@ nav a:hover {
 }
 
 .bg {
-  background-image: url(images/holi.jfif);
+  background-image: url(images/holi.jpg);
 }
 
 .form-select {
@@ -156,10 +157,11 @@ nav a:hover {
 .text p {
   position: absolute;
   text-align: center;
-  left: 34%;
-  top: 40%;
+  left: 50%;
+  top: 50%;
   color: white;
   font-size: 40px;
+  transform: translate(-50%, -50%);
 }
 
 .footer {
