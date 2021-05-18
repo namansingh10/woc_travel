@@ -129,6 +129,13 @@ nav a:hover {
   padding-right: 15px;
 }
 
+.about {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+background-color: lemonchiffon;
+}
+
 .heading {
   text-align: center;
   font-family: Algerian;
