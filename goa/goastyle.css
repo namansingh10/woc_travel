@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1263px;
 }
 
 body {
@@ -12,27 +11,37 @@ body {
 .navbar {
   display: flex;
   align-items: center;
+  overflow: hidden;
+  background-color: #333;
   /* padding: 8px; */
 }
 
 .logo {
-  margin-left: auto;
+  margin-left: 10px;
+  float: left;
 }
 
-nav {
-  padding-left: 200px;
-  margin-right: auto;
+.navbar nav {
+	position:sticky;
+	float:right;
+	left: 60%;
+  overflow: auto;
+  display: flex;
 }
 
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
+.navbar nav a {
   text-decoration: none;
-  color: #000;
+  display: block;
+  color: #fff;
+  height:50px;
+  text-align: center;
+  top: 3px;
+  padding: 10px 10px;
+  
+}
+nav a:hover {
+	background-color: #ddd;
+	color: black;
 }
 
 .container {
@@ -43,15 +52,15 @@ nav ul li a {
 
 .homepic1 {
   filter: brightness(50%);
-  width: 1263px;
-  height: 590px;
+  width: 100%;
+  height: 640px;
 }
 
 .about {
   font-size: 20px;
   text-align: center;
   padding: 20px;
-  background-color: beige;
+background-color: lemonchiffon;
 }
 
 .text1 {
@@ -61,4 +70,25 @@ nav ul li a {
   font-weight: bold;
   font-size: 25px;
   transform: translate(-50%, -50%);
+}
+.row2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.col-2 {
+	padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+	.row{
+		flex-direction:column;
+	}
+	.navbar {
+		flex-direction: column;
+	}
+	nav {
+		flex-direction:column;
+		width: 100%;
+	}
 }
