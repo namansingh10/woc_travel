@@ -109,8 +109,11 @@ nav a:hover {
 	font-size:20px;
 }
 .form-select {
-	padding: 5px;
-	width: 100px;
+	padding: 4px;
+	width: 140px;
+}
+.form-select option {
+	font-size:15px;
 }
 
 .small-container {
