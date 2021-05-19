@@ -48,35 +48,59 @@
             <div class="bottom">
                 Find Your <br><b>HOLIDAY</b>
             </div>
-            <div class="where">
+            
                 <!-- <font size="3">Where: </font> -->
                 <form>
+				<div class="where">
 				<div class="tym">
                     <label for="when" class="form-label" id="sec">From:&nbsp;</label>
                     <input type="date" id="when" required>
                     <label>&emsp;TO&emsp;</label>
-                    <input type="date" id="when" required>
+                    <input type="date" id="when2" required>
 				</div>
 				<div class="city">
                     <label for="dest" class="form-label">&emsp;Where:&nbsp;</label>
-                    <select id="dest" class="form-select" required>
+                        <select id="dest" class="form-select" required>
                         <option value="0" disabled selected hidden>Choose...</option>
-                        <option value="delhi/delhi.html">Delhi</option>
+						<option value="1">Delhi</option>
+                        <option value="2">Mumbai</option>
+                        <option value="3">Goa</option>
+                    <!--    <option value="delhi/delhi.html">Delhi</option>
                         <option value="mumbai/mumbai.html">Mumbai</option>
-                        <option value="goa/goa.html">Goa</option>
+                        <option value="goa/goa.html">Goa</option> -->
                     </select>
 				</div>
+				
+				</div>
+				<button onclick="go()">Go</button>
                 </form>
-            </div>
+			
+			<p id="error"></p>
         </div>
     
     <script type="text/javascript">
-        window.onload = function () {
-            var combo = document.getElementById('dest');
-            combo.onchange = function () {
-                window.open(this.value, '_blank');
-            }
-        }
+	function go() {
+	    var x= document.getElementById('when').value;
+		var y= document.getElementById('when2').value;
+		var place= document.getElementById('dest').value;
+		var today= new Date();
+		var selected= new Date(x);
+		if (x>y)
+			alert("Invalid duration selected");
+		else if (today>selected) 
+			alert("You are supposed to choose future dates");
+		else {
+				if (place=="0")
+				alert("Please choose a city");
+				else if (place=="1")
+				window.open("delhi/delhi.html", '_blank');
+				else if (place=="2")
+				window.open("mumbai/mumbai.html", '_blank');
+				else if( place=="3")
+				window.open("goa/goa.html", '_blank');
+			}
+		}
+		
     </script>
     
     <div class="small-container">
@@ -147,7 +171,7 @@
     <div class="footer">
         <div class="row">
             <div class="col-1">
-                <a href="index.html"><img src="images/logo1.png" width="300px" height="200px"></a>
+                <a href="index.html"><img src="images/logo1.png" width="350px" height="200px"></a>
             </div>
 			<div class="row2">
 				<div class="col-2">
