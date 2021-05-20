@@ -10,6 +10,7 @@
   font-size: 17px;
 }
 
+
 .pic1 {
   position: absolute;
   top: 85%;
@@ -75,6 +76,7 @@
 .imageover > * {
   transform: translateY(20px);
   transition: transform 0.25s;
+  cursor: pointer;
 }
 
 .imageover:hover {
@@ -83,6 +85,7 @@
 
 .imageover:hover > * {
   transform: translateY(0);
+  cursor: pointer;
 }
 
 .imagetitle {
