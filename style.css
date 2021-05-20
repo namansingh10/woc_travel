@@ -37,7 +37,7 @@ body {
   text-align: center;
   top: 3px;
   padding: 10px 10px;
-  
+  transition: 0.3s ease;
 }
 nav a:hover {
 	background-color: #ddd;
@@ -86,8 +86,14 @@ nav a:hover {
 .bottom {
 	position: relative;
 	text-align: center;
-	font-size: 20px;
+	font-size: 25px;
+	margin-bottom: 10px;
 }
+
+.bottom i {
+  color: #fff;
+}
+
 form {
 	display: flex;
 	align-items:center;
@@ -129,7 +135,11 @@ form button {
 	background-color: silver;
 }
 .form-label{
+	font-size: 20px;
 	font-size:20px;
+}
+label {
+  color: #fff;
 }
 .form-select {
 	padding: 4px;
