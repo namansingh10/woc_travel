@@ -31,7 +31,7 @@ background-color: lemonchiffon;
 .navbar nav {
 	position:sticky;
 	float:right;
-	left: 60%;
+	left: 52%;
   overflow: auto;
   display: flex;
 }
