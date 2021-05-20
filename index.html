@@ -52,25 +52,25 @@
             
                 <!-- <font size="3">Where: </font> -->
                 <form>
-				<div class="where">
-				<div class="tym">
+            <div class="where">
+                <div class="tym">
                     <label for="when" class="form-label" id="sec">From:&nbsp;</label>
-                    <input type="date" id="when" required>
-                    <label>&emsp;TO&emsp;</label>
-                    <input type="date" id="when2" required>
-				</div>
-				<div class="city">
-                    <label for="dest" class="form-label">&emsp;Where:&nbsp;</label>
-                        <select id="dest" class="form-select" required>
+                    <input type="date" id="when" min="1997-01-01" max="2030-12-31" required>
+                    <label>&nbsp;TO&nbsp;</label>
+                    <input type="date" id="when2" min="1997-01-01" max="2030-12-31" required>
+                </div>
+                <div class="city">
+                    <label for="dest" class="form-label">&emsp;&emsp;&emsp;&emsp;&emsp;Where:&nbsp;</label>
+                    <select id="dest" class="form-select" required>
                         <option value="0" disabled selected hidden>Choose...</option>
-						<option value="1">Delhi</option>
+                        <option value="1">Delhi</option>
                         <option value="2">Mumbai</option>
                         <option value="3">Goa</option>
-                   	 </select>
-				</div>
-				</div>
-				<button onclick="go()" class="btn">Search</button>
-                </form>
+                    </select>
+                </div>
+            </div>
+            <button onclick="go()" class="btn">Search</button>
+        </form>
 			
 			<p id="error"></p>
         </div>
