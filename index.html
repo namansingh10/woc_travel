@@ -66,14 +66,11 @@
 						<option value="1">Delhi</option>
                         <option value="2">Mumbai</option>
                         <option value="3">Goa</option>
-                    <!--    <option value="delhi/delhi.html">Delhi</option>
-                        <option value="mumbai/mumbai.html">Mumbai</option>
-                        <option value="goa/goa.html">Goa</option> -->
                     </select>
 				</div>
 				
 				</div>
-				<button onclick="go()">Go</button>
+				<button onclick="go()" class="btn">Go</button>
                 </form>
 			
 			<p id="error"></p>
@@ -89,7 +86,7 @@
 		if (x>y)
 			alert("Invalid duration selected");
 		else if (today>selected) 
-			alert("You are supposed to choose future dates");
+			alert("Kindly choose future dates");
 		else {
 				if (place=="0")
 				alert("Please choose a city");
