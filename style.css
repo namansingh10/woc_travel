@@ -8,6 +8,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.about {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+background-color: lemonchiffon;
+}
+
 .navbar {
   display: flex;
   align-items: center;
