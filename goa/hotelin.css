@@ -51,5 +51,7 @@ h1 {
 }
 
 #in {
-  margin-left: 520px;
+  position: relative;
+  left: 40%;
+  padding-bottom: 15px;
 }
