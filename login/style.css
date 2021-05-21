@@ -248,3 +248,8 @@ input
 {
   font-weight: bold;
 }
+
+.req
+{
+  color: red;
+}

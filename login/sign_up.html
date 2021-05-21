@@ -41,13 +41,13 @@
         <br><br>
         
         <form method="POST" action="configure.php">
-            <p>Enter Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="name" name="name"></p>
+            <p>Enter Name <span class="req" style="color: red;">*</span> :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="name" name="name" required></p>
             <br>
             <p>Enter Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="email id" name="email"></p>
             <br>
-            <p>Set Username :&nbsp;&nbsp;&nbsp;<input type="text" placeholder="username" name="username"></p>
+            <p>Set Username <span class="req" style="color: red;">*</span> :&nbsp;&nbsp;&nbsp;<input type="text" placeholder="username" name="username" required></p>
             <br>
-            <p>Set Password :&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="password" name="password"></p>
+            <p>Set Password <span class="req" style="color: red;">*</span> :&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="password" name="password" required></p>
             <br>
             
             <input type="submit" value="    sign up   " id="submit">
