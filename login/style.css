@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.about {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: lemonchiffon;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: #333;
+  /* padding: 8px; */
+}
+
+.logo {
+  margin-left: 10px;
+  float: left;
+}
+
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 63%;
+  overflow: auto;
+  display: flex;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  top: 3px;
+  padding: 10px 10px;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.bg {
+  background-image: url(images/holi.jpeg);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-3 {
+  flex-basis: 31%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.footer {
+  padding: 20px;
+  /* margin-top: 70px; */
+  background: #333;
+  color: #fff;
+}
+
+.col-2 ul li {
+  list-style-type: none;
+  color: #fff;
+}
+
+.col-2 ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.col-2 ul li b {
+  font-size: 20px;
+}
+
+.col-2 img {
+  padding: 20px;
+}
+
+/* login style */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#login {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4% 4% 4% 4%;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 2%;
+  border-width: medium;
+  font-size: large;
+}
+
+/* so that all links may look same */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.newuser:hover {
+  font-weight: bold;
+}
+
+#submit {
+  padding: 2% 2% 2% 2%;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  border-style: none;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: forestgreen;
+}
+
+input {
+  padding: 2% 2% 2% 2%;
+}
+
+#bg {
+  background-image: url("bg4.jpg");
+}
+
+#reg:hover {
+  font-weight: bold;
+}
+
+.req {
+  color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .logo img {
+    height: 100px;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+}
