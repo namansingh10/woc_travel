@@ -16,18 +16,18 @@ if ($conn->connect_error) {
 $sql = "CREATE DATABASE logindata";
 
 # Debug Message
-// if ($conn->query($sql) === TRUE) {
-//   echo "Database created successfully";
-// } else {
-//   echo "Error creating database: " . $conn->error;
-// }
+if ($conn->query($sql) === TRUE) {
+  // echo "Database created successfully";
+} else {
+  // echo "Error creating database: " . $conn->error;
+}
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 // sql to create table
-$sql = "CREATE TABLE users (
+$sql = "CREATE TABLE logintable (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     uname VARCHAR(50) NOT NULL,
     username VARCHAR(50) NOT NULL,
@@ -37,11 +37,11 @@ $sql = "CREATE TABLE users (
     )";
     
     # Debug Message
-    // if ($conn->query($sql) === TRUE) {
-    //   echo "Table users created successfully";
-    // } else {
-    //   echo "Error creating table: " . $conn->error;
-    // }
+    if ($conn->query($sql) === TRUE) {
+      // echo "Table users created successfully";
+    } else {
+      // echo "Error creating table: " . $conn->error;
+    }
 
     
 $name=$usern=$email=$password="";
@@ -53,7 +53,7 @@ $password=$_POST['password'];
 
 echo "hello " . $name . "<br>";
 
-$sql = "INSERT INTO users (uname, username, email, pass)
+$sql = "INSERT INTO logintable (uname, username, email, pass)
 VALUES ('$name', '$usern', '$email', '$password')";
 
 # Debug Message
