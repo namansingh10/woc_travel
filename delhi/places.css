@@ -1,5 +1,25 @@
-#place {
+.cont-2 {
+  position: relative;
+  text-align: left;
+  color: white;
+  font-size: 18px;
+}
+
+.ghome {
+  width: 100%;
+  height: 300px;
+  filter: brightness(70%);
+  border-bottom: 2px solid #000;
+}
+
+.text3 {
+  position: absolute;
+  top: 5%;
   left: 35%;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(26, 24, 24);
+  word-spacing: 5px;
 }
 
 .extra {
@@ -10,89 +30,33 @@
   font-size: 17px;
 }
 
-
-.pic1 {
-  position: absolute;
-  top: 85%;
-  left: 5%;
+.bg1 {
+  background-color: beige;
 }
 
-.pic2 {
-  position: absolute;
-  top: 85%;
-  left: 36%;
+.categp {
+  margin-left: 0px;
+  margin-top: 30px;
 }
 
-.pic3 {
-  position: absolute;
-  top: 85%;
-  left: 68%;
+.categp img {
+  width: 300px;
+  height: 200px;
 }
 
-.pic4 {
-  position: absolute;
-  top: 124%;
-  left: 5%;
+.picp {
+  margin-left: 100px;
 }
 
-.pic5 {
-  position: absolute;
-  top: 124%;
-  left: 36%;
+.movep {
+  padding-left: 420px;
+  font-size: 18px;
 }
 
-.pic6 {
-  position: absolute;
-  top: 124%;
-  left: 68%;
+.rating {
+  font-size: 25px;
 }
 
-.first {
-  display: block;
-  border-radius: 10px;
-  width: 350px;
-  height: 250px;
-}
-
-.imageover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 350px;
-  height: 250px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.imageover > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-  cursor: pointer;
-}
-
-.imageover:hover {
-  opacity: 1;
-}
-
-.imageover:hover > * {
-  transform: translateY(0);
-  cursor: pointer;
-}
-
-.imagetitle {
-  font-size: 1.1em;
-  text-align: center;
-}
-
-#down {
-  margin-top: 600px;
+.downp {
+  margin-bottom: 130px;
 }
