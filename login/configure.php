@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname= "signup";
+$dbname = "dataentry";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE signup";
+$sql = "CREATE DATABASE dataentry";
 
 # Debug Message
 // if ($conn->query($sql) === TRUE) {
@@ -25,6 +25,7 @@ $sql = "CREATE DATABASE signup";
 $conn->close();
 
 $conn = new mysqli($servername, $username, $password, $dbname);
+
 
 // sql to create table
 $sql = "CREATE TABLE users (
@@ -42,6 +43,12 @@ $sql = "CREATE TABLE users (
     // } else {
     //   echo "Error creating table: " . $conn->error;
     // }
+
+echo "hello " . $_POST["name"] . "<br>";
+echo "You are succesfully registered";
+
+// $sql = "INSERT INTO users (uname, username, email, pass)
+// VALUES ($_POST["name"], $_POST["username"], $_POST["email"], $_POST["password"])";
 
 $conn->close();
 
