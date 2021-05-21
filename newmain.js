@@ -40,11 +40,11 @@ function submitForm(e) {
     //Show alert
     document.querySelector('.alert').style.display = 'block';
 
-    //Hide alert after 2.5 seconds
+    //Hide alert after 10 seconds
     setTimeout(function(){
         document.querySelector('.alert').style.display = 'none';
     
-    },2500);
+    },10000);
 
 
     //Clear form
