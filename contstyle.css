@@ -1,0 +1,60 @@
+.bg1 {
+  background-color: beige;
+}
+
+.contact {
+  text-align: center;
+}
+
+.conthead {
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+form {
+  margin-top: 40px !important;
+  padding-bottom: 50px !important;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 550px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  color: #000;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+input {
+  height: 45px;
+}
+
+.bttn:hover {
+  background: #c21e1e;
+}
+
+.bttn {
+  color: white;
+  background: #ff523b;
+  padding: 12px 130px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 3px;
+}
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color: #79c879;
+  color: white;
+  margin-top: 20px;
+  display: none;
+}
