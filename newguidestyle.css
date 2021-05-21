@@ -60,3 +60,12 @@ form {
 .btn:hover {
   background: #c21e1e;
 }
+
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color: #79c879;
+  color: white;
+  margin-top: 20px;
+  display: none;
+}
