@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "dataentry";
+$dbname = "logindata";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE dataentry";
+$sql = "CREATE DATABASE logindata";
 
 # Debug Message
 // if ($conn->query($sql) === TRUE) {
@@ -22,7 +22,6 @@ $sql = "CREATE DATABASE dataentry";
 //   echo "Error creating database: " . $conn->error;
 // }
 
-$conn->close();
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -39,16 +38,31 @@ $sql = "CREATE TABLE users (
     
     # Debug Message
     // if ($conn->query($sql) === TRUE) {
-    //   echo "Table MyGuests created successfully";
+    //   echo "Table users created successfully";
     // } else {
     //   echo "Error creating table: " . $conn->error;
     // }
 
-echo "hello " . $_POST["name"] . "<br>";
-echo "You are succesfully registered";
+    
+$name=$usern=$email=$password="";
 
-// $sql = "INSERT INTO users (uname, username, email, pass)
-// VALUES ($_POST["name"], $_POST["username"], $_POST["email"], $_POST["password"])";
+$name=$_POST['name'];
+$usern=$_POST['username'];
+$email=$_POST['email'];
+$password=$_POST['password'];
+
+echo "hello " . $name . "<br>";
+
+$sql = "INSERT INTO users (uname, username, email, pass)
+VALUES ('$name', '$usern', '$email', '$password')";
+
+# Debug Message
+if ($conn->query($sql) === TRUE) {
+  echo "You are successfully registered";
+} 
+else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
 $conn->close();
 
