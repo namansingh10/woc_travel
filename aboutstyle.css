@@ -1,0 +1,30 @@
+.bg1 {
+  background-color: beige;
+}
+
+.contact {
+  text-align: center;
+}
+
+.conthead {
+  padding-top: 20px;
+  font-size: 25px;
+}
+
+.navbar nav {
+  left: 63% !important;
+}
+
+.maint {
+  margin: 10px 100px 20px 100px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.maint p {
+  padding-top: 10px;
+}
+
+span {
+  font-weight: 500;
+}
