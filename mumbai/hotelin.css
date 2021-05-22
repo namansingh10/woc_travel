@@ -1,3 +1,7 @@
+.navbar nav {
+  left: 63% !important;
+}
+
 .column {
   float: left;
   width: 25%;
