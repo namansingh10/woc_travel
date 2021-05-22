@@ -1,4 +1,5 @@
-<!-- This file creates database, add table, and ultimately adds user in the table. -->
+<!-- This file creates database, add table, and ultimately adds a new user in the table. -->
+
 <?php
 $servername = "localhost";
 $username = "root";

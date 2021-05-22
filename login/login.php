@@ -1,3 +1,5 @@
+<!-- This file checks the credentials of the user who is trying to log in  -->
+
 <?php
 $servername = "localhost";
 $username = "root";
