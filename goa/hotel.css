@@ -73,3 +73,11 @@
 #hotel {
   padding-bottom: 15px;
 }
+
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 63% !important;
+  overflow: auto;
+  display: flex;
+}
