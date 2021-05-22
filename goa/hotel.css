@@ -77,7 +77,7 @@
 .navbar nav {
   position: sticky;
   float: right;
-  left: 63% !important;
+  left: 60% !important;
   overflow: auto;
   display: flex;
 }
