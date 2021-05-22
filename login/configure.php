@@ -62,7 +62,7 @@ $result = $conn->query($sql);
 
 if($data= $result->fetch_assoc())
 {
-  echo "Username taken";
+  echo "Username taken!";
 }
 
 else
