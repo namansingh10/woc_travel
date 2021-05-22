@@ -28,7 +28,7 @@
                 <a href="../pilgrimage.html">Pilgrimage</a>
                 <a href="../contact.html">Contact Us</a>
                 <a href="../about.html">About Us</a>
-                <a href="">Sign In</a>
+                <a href="../login/login.html">Sign In</a>
             </nav>
         </div>
     </header>
@@ -73,7 +73,7 @@
         </div>
 
 
-        <a href=""><button class="btn" id="in">BOOK FOR ₹1,000/DAY</button></a>
+        <button class="btn" id="in" onclick="bookFunction()">BOOK FOR ₹1,100/DAY</button>
 
         <section class="extra">
 
@@ -125,6 +125,13 @@
                     peaceful fishing if required. Secured stay & good food.<br> - Tome de Souza</p>
             </div>
         </section>
+        <script>
+            function bookFunction() {
+                var b = 'Serene Waters Resort Goa 1100',
+                    url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+                document.location.href = url;
+            }
+        </script>
 
 
         <!-- ---------footer start--------- -->
@@ -137,8 +144,8 @@
                 </div>
                 <div class="col-2">
                     <ul>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="../about.html">About Us</a></li>
                         <li><a href="">Careers</a></li>
                         <li><a href="">FAQs</a></li>
                         <li><a href="">Return Policy</a></li>
