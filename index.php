@@ -33,7 +33,7 @@
                         ?>
                     </a>
                     <a href="pilgrimage.php">Pilgrimage</a>
-                    <a href="newguide.html">Become A Guide</a>
+                    <a href="newguide.php">Become A Guide</a>
                     <a href="contact.html">Contact Us</a>
                     <a href="about.html">About Us</a>
                     <a href="index.html">Logout</a>
