@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <a href=""><button class="btn" id="in">BOOK FOR ₹4,500/DAY</button></a>
+        <button onclick="bookFunction()" class="btn" id="in">BOOK FOR ₹4,500/DAY</button>
 
         <section class="extra">
 
@@ -121,6 +121,13 @@ Ballrooms & restaurant are good but improvement is needed for the taste of foods
             </div>
         </section>
 
+	    <script>
+				function bookFunction() {
+				var b = 'Hyatt Regency 4500',
+				url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
 
 
 
