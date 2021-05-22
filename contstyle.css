@@ -58,3 +58,7 @@ input {
   margin-top: 20px;
   display: none;
 }
+
+.navbar nav {
+  left: 63% !important;
+}
