@@ -24,7 +24,7 @@
     <header>
         <div class="navbar">
             <div class="logo">
-                <a href="index.html"><img src="images/logo1.png" width="150px" height="70px"></a>
+                <a href="home.php"><img src="images/logo1.png" width="150px" height="70px"></a>
             </div>
             <nav>
                     <a href="home.php">
@@ -182,8 +182,8 @@
 			<div class="row2">
 				<div class="col-2">
 					<ul>
-						<li><a href="">Contact Us</a></li>
-						<li><a href="">About Us</a></li>
+						<li><a href="contact.php">Contact Us</a></li>
+						<li><a href="about.php">About Us</a></li>
 						<li><a href="">Careers</a></li>
 						<li><a href="">FAQs</a></li>
 						<li><a href="">Return Policy</a></li>
