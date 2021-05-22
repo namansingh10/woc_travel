@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "logindata";
+$dbname = "wocdata";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -15,7 +15,7 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE logindata";
+$sql = "CREATE DATABASE wocdata";
 
 # Debug Message
 if ($conn->query($sql) === TRUE) {
@@ -23,6 +23,8 @@ if ($conn->query($sql) === TRUE) {
 } else {
   // echo "Error creating database: " . $conn->error;
 }
+
+$conn->close();
 
 // Now since our DB is created, building new connection
 $conn = new mysqli($servername, $username, $password, $dbname);
