@@ -78,3 +78,11 @@ ul {
 .btn:hover {
   transform: scale(1.09);
 }
+
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 63% !important;
+  overflow: auto;
+  display: flex;
+}
