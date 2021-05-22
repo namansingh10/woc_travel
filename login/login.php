@@ -23,16 +23,20 @@ $sql = "SELECT uname FROM logintable WHERE username='$usern' AND pass='$password
 
 $result = $conn->query($sql);
 
+$flag=0;
+
 if($data= $result->fetch_assoc()) 
 {
     // echo "Welcome " . $data['uname'] ;
     $value= "Welcome " . $data['uname'];
+    $flag=1;
 }
 
 else 
 {
-    echo "wrong credentials";
+    // echo "wrong credentials";
     $value= "Wrong Credentials";
+    $flag=0;
 }
 
 
@@ -51,8 +55,9 @@ $conn->close();
 <body>
 
 <?php
-  echo '<script>alert("Welcome")</script>';
-  echo "<h1>$value</h1>"
+  echo "<script>alert('$value')</script>";
+  echo "<script>if($flag==1){ location.replace('../index.html') }</script>";
+  echo "<script>if($flag==0){ location.replace('login.html') }</script>";
 ?>
 
 </body>
