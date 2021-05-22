@@ -77,3 +77,11 @@
   margin: 60px;
   text-align: justify;
 }
+
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 63% !important;
+  overflow: auto;
+  display: flex;
+}
