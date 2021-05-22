@@ -25,9 +25,9 @@ $result = $conn->query($sql);
 
 $flag=0;
 
-// starting session and setting a default value
+// starting session and setting a default value, here null
 session_start();
-$_SESSION['name']="Sign In";
+$_SESSION['name']=null;
 
 if($data= $result->fetch_assoc()) 
 {

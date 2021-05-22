@@ -27,17 +27,16 @@
                 <a href="index.html"><img src="images/logo1.png" width="150px" height="70px"></a>
             </div>
             <nav>
-                    <a href="index.html">Home</a>
-                    <a href="pilgrimage.html">Pilgrimage</a>
-                    <a href="newguide.html">Become A Guide</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="about.html">About Us</a>
                     <a href="index.php">
                         <?php
                             echo $_SESSION['name'];
                         ?>
                     </a>
-                
+                    <a href="pilgrimage.html">Pilgrimage</a>
+                    <a href="newguide.html">Become A Guide</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About Us</a>
+                    <a href="index.html">Logout</a>
             </nav>
         </div>
     </header>
