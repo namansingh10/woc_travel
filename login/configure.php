@@ -24,7 +24,7 @@ if ($conn->query($sql) === TRUE) {
   // echo "Error creating database: " . $conn->error;
 }
 
-
+// Now since our DB is created, building new connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 
@@ -45,7 +45,7 @@ $sql = "CREATE TABLE logintable (
       // echo "Error creating table: " . $conn->error;
     }
 
-    
+// Variables for storing dynamic data from user
 $name=$usern=$email=$password="";
 
 $name=$_POST['name'];
@@ -53,8 +53,21 @@ $usern=$_POST['username'];
 $email=$_POST['email'];
 $password=$_POST['password'];
 
+// A formal welcome note
 echo "hello " . $name . "<br>";
 
+// Checking if username is taken
+$sql = "SELECT * FROM logintable WHERE username='$usern'";
+$result = $conn->query($sql);
+
+if($data= $result->fetch_assoc())
+{
+  echo "Username taken";
+}
+
+else
+{
+  // Inserting data in table
 $sql = "INSERT INTO logintable (uname, username, email, pass)
 VALUES ('$name', '$usern', '$email', '$password')";
 
@@ -64,6 +77,8 @@ if ($conn->query($sql) === TRUE) {
 } 
 else {
   echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
 }
 
 $conn->close();
