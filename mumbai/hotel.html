@@ -25,9 +25,9 @@
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../pilgrimage.html">Pilgrimage Travel</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-                <a href="">Sign In</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../contact.html">About Us</a>
+                <a href="../login/login.html">Sign In</a>
             </nav>
         </div>
     </header>
@@ -56,7 +56,7 @@
             </div>
             <p>Nariman Point, Mumbai, Maharashtra 400021</p>
             <p>Contact - 022 6632 5757</p>
-            <button class="btn" id="hotel">BOOK FOR ₹9,500/DAY</button>
+            <button onclick="bookFunction()" class="btn" id="hotel">BOOK FOR ₹9,500/DAY</button>
         </div>
         </div>
         </div>
@@ -184,7 +184,13 @@
 
 
         </section>
-
+		<script>
+				function bookFunction() {
+				var b = 'The Oberoi 9500',
+				url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
         <!-- ---------footer start--------- -->
 
 

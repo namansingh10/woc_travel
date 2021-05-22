@@ -1,74 +1,74 @@
-
-h1
-{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
-form
-{
-    text-align: center;
-    
-    padding: 4% 4% 4% 4%;
-    margin-left: 20%;
-    margin-right: 20%;
-    
-    font-size: large;
+form {
+  text-align: center;
+  padding: 4% 4% 4% 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: large;
 }
-form p {
-	
+
+input {
+  font-size: 20px;
 }
+
 /* so that all links may look same */
 #main {
-	margin-left:10%;
+  margin-left: 10%;
 }
-#submit
-{    
-padding:5px;
-    font-weight: bold;
-    color: white;
-    background-color: green;
-    border-style: none;
-    cursor: pointer;
-	font-size:20px;
-	width:50px;
-}
-
-#submit:hover
-{
-    background-color: forestgreen;
+#submit {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 45px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  border-style: none;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
 }
 
-#input
-{
-    padding: 2% 2% 2% 2%;
+#submit:hover {
+  background-color: forestgreen;
 }
 
-#bg
-{
-  background-image: url("bg4.jpg");
+#input {
+  padding: 2% 2% 2% 2%;
+}
+
+#bg {
+  background-color: beige;
 }
 
 #main2 {
-	margin-left:30%;
+  margin-left: 30%;
 }
 #display {
-	float:center;
-	display:none;
-	padding:5px;
-	background-color:cyan;
-	border-radius: 20px;
-	font-size:20px;
-	text-align:center;
-	margin-left:10%;
+  float: center;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(39, 160, 216);
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 10%;
 }
+
 #main3 {
-display:none;
+  display: none;
 }
 #main3 img {
-	height: 40px;
-	width: 40px;
-	float:left;
+  height: 40px;
+  width: 40px;
+  float: left;
 }
 #pay {
-	font-size:30px;
+  font-size: 30px;
 }
