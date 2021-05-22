@@ -25,10 +25,10 @@
             </div>
             <nav>
                 <a href="../index.html">Home</a>
-                <a href="../pilgrimage.html">Pilgrimage</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-                <a href="">Sign In</a>
+                <a href="../pilgrimage.html">Pilgrimage Travel</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../contact.html">About Us</a>
+                <a href="../login/login.html">Sign In</a>
             </nav>
         </div>
     </header>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <a href=""><button class="btn" id="in">BOOK FOR ₹5,500/DAY</button></a>
+        <button onclick="bookFunction()" class="btn" id="in">BOOK FOR ₹5,500/DAY</button>
 
         <section class="extra">
 
@@ -128,7 +128,13 @@ The view from the room towards the bridge is very nice and the hotel has done a 
             </div>
         </section>
 
-
+<script>
+				function bookFunction() {
+				var b = 'Taj Lands End 5500',
+				url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
 
 
 

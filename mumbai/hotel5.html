@@ -25,10 +25,10 @@
             </div>
             <nav>
                 <a href="../index.html">Home</a>
-                <a href="../pilgrimage.html">Pilgrimage</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-                <a href="">Sign In</a>
+                <a href="../pilgrimage.html">Pilgrimage Travel</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../contact.html">About Us</a>
+                <a href="../login/login.html">Sign In</a>
             </nav>
         </div>
     </header>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <a href=""><button class="btn" id="in">BOOK FOR ₹2,000/DAY</button></a>
+        <button onclick="bookFunction()" class="btn" id="in">BOOK FOR ₹2,000/DAY</button>
 
         <section class="extra">
 
@@ -121,7 +121,13 @@ Freebies include a breakfast buffet, parking and a convention centre shuttle. Th
             </div>
         </section>
 
-
+<script>
+				function bookFunction() {
+				var b = 'Sarovar Grand Hometel 2000',
+				url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
 
 
 
