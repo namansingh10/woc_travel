@@ -77,3 +77,7 @@
 #hotel {
   padding-bottom: 15px;
 }
+
+.navbar nav {
+  left: 63% !important;
+}
