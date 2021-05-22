@@ -23,15 +23,34 @@ $result = $conn->query($sql);
 
 if($data= $result->fetch_assoc()) 
 {
-    echo "Welcome" . $data['uname'] ;
+    // echo "Welcome " . $data['uname'] ;
+    $value= "Welcome " . $data['uname'];
 }
 
 else 
 {
     echo "wrong credentials";
+    $value= "Wrong Credentials";
 }
 
 
 $conn->close();
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test page</title>
+</head>
+<body>
+
+  <?php
+    echo "<h1>$value</h1>"
+  ?>
+
+</body>
+</html>
