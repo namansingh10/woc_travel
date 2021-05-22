@@ -25,10 +25,10 @@
             </div>
             <nav>
                 <a href="../index.html">Home</a>
-                <a href="../pilgrimage.html">Pilgrimage</a>
-                <a href="">Contact Us</a>
-                <a href="">About Us</a>
-                <a href="">Sign In</a>
+                <a href="../pilgrimage.html">Pilgrimage Travel</a>
+                <a href="../contact.html">Contact Us</a>
+                <a href="../contact.html">About Us</a>
+                <a href="../login/login.html">Sign In</a>
             </nav>
         </div>
     </header>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <a href=""><button class="btn" id="in">BOOK FOR ₹9,500/DAY</button></a>
+        <button onclick="bookFunction()" class="btn" id="in">BOOK FOR ₹9,500/DAY</button></a>
 
         <section class="extra">
 
@@ -129,7 +129,13 @@ The Chhatrapati Shivaji International Airport is a 45-minute drive and train sta
         </section>
 
 
-
+<script>
+				function bookFunction() {
+				var b = 'The Oberoi 9500',
+				url = '../bookedHotel.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
 
 
         <!-- ---------footer start--------- -->
@@ -142,8 +148,8 @@ The Chhatrapati Shivaji International Airport is a 45-minute drive and train sta
                 </div>
                 <div class="col-2">
                     <ul>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                        <li><a href="../about.html">About Us</a></li>
                         <li><a href="">Careers</a></li>
                         <li><a href="">FAQs</a></li>
                         <li><a href="">Return Policy</a></li>
