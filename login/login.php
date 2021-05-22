@@ -56,7 +56,7 @@ $conn->close();
 
 <?php
   echo "<script>alert('$value')</script>";
-  echo "<script>if($flag==1){ location.replace('../index.html') }</script>";
+  echo "<script>if($flag==1){ location.replace('../index.php') }</script>";
   echo "<script>if($flag==0){ location.replace('login.html') }</script>";
 ?>
 
