@@ -2,141 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trippie | Book Guide</title>
-    <link rel="stylesheet" type="text/css" href="booked.css"> 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="scroll.css">
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trippie | Book Guide</title>
+	<link rel="stylesheet" type="text/css" href="booked.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="scroll.css">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 
 <body>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="images/logo1.png" width="180px" height="70px"></a>
-            </div>
-            <nav>
-                    <a href="index.html">Home</a>
-                    <a href="pilgrimage.html">Pilgrimage</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="about.html">About Us</a>
-            </nav>
-        </div>
-    </header>
-		
-        <div id="bg">
-        <br><br>
-        <h1 id="title1"></h1>
-        <br>
-        <br>
+	<header>
+		<div class="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo1.png" width="180px" height="70px"></a>
+			</div>
+			<nav>
+				<a href="index.html">Home</a>
+				<a href="pilgrimage.html">Pilgrimage</a>
+				<a href="contact.html">Contact Us</a>
+				<a href="about.html">About Us</a>
+			</nav>
+		</div>
+	</header>
+
+	<div id="bg">
+		<br><br>
+		<h1 id="title1"></h1>
+		<br>
+		<br>
 		<div id="main">
-            <p style="font-size:20px">Number of days you wish to book guide :&nbsp;<input id="input" type="text"></input></p>
-            <button id="submit" onclick="confirm()">Go</button>
-		
-        <br>
-        <br>
-        <div id="main2">
-        <button id= "display" onclick="Paid()"></button>
+			<p>Number of days you wish to book guide :&nbsp;<input id="input" type="text"></input></p>
+			<button id="submit" onclick="confirm()">GO</button>
 
-        <br>
-        <br>
-		<div id="main3">
-		<img src="https://img.icons8.com/pastel-glyph/2x/checked--v3.png"</img>
-		
-			<p id="pay"></p>
-		</div>
-		<br><br><br><br>
-		</div>
-</div>
+			<br>
+			<br>
+			<div id="main2">
+				<button id="display" onclick="Paid()"></button>
 
-    <script>
-		window.onload = function () {
+				<br>
+				<br>
+				<div id="main3">
+					<img src="https://img.icons8.com/pastel-glyph/2x/checked--v3.png">
 
-			var url = document.location.href,
-				params = url.split('?')[1],
-				data = {}, tmp;
-			
-				 tmp = params.split('=');
-				 data[tmp[0]] = tmp[1];
-			
-			var s= (data.n).split("%20");
-		    var y="Book with " +s[0]+ " " +s[1];
-			
-			document.getElementById('title1').innerHTML = y;
-		}
-		
-		function confirm() {
-		
-		var url = document.location.href,
-				params = url.split('?')[1],
-				data = {}, tmp;
-			
-				 tmp = params.split('=');
-				 data[tmp[0]] = tmp[1];
-			
-			var s= (data.n).split("%20");
-			var n=parseInt(s[2]);
-			var mdays=document.getElementById('input').value;
-			if((mdays+"n").length==1)
-			alert("Please enter the number of days");
-			else {
-			var days=parseInt(mdays);
-			
-			var cost=days*n;
-			document.getElementById('display').style.display="block";
-			document.getElementById('display').innerHTML = "Pay Rs. "+cost;
-			}
-		}
-		
-		function Paid(){
-		document.getElementById('main3').style.display="block";
-		document.getElementById('pay').innerHTML="Guide booked successfully";
-		}
-		
-		</script>
-		
-		
-    <!-- ---------footer start--------- -->
-
-
-    
-<div class="footer">
-        <div class="row">
-            <div class="col-1">
-                <a href="index.html"><img src="images/logo1.png" width="300px" height="200px"></a>
-            </div>
-			<div class="row2">
-				<div class="col-2">
-					<ul>
-						<li><a href="">Contact Us</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Careers</a></li>
-						<li><a href="">FAQs</a></li>
-						<li><a href="">Return Policy</a></li>
-						<li><a href="">Terms Of Use</a></li>
-					</ul>
+					<p id="pay"></p>
 				</div>
-				<div class="col-2">
-					<ul>
-						<li><b><u>SOCIAL</u></b></li>
-						<li><a href="">Facebook</a></li>
-						<li><a href="">Twitter</a></li>
-						<li><a href="">YouTube</a></li>
-						<li><a href="">Instagram</a></li>
-					</ul>
+				<br><br><br><br>
+			</div>
+		</div>
+
+		<script src="bookg.js"></script>
+
+
+		<!-- ---------footer start--------- -->
+
+
+
+		<div class="footer">
+			<div class="row">
+				<div class="col-1">
+					<a href="index.html"><img src="images/logo1.png" width="300px" height="200px"></a>
+				</div>
+				<div class="row2">
+					<div class="col-2">
+						<ul>
+							<li><a href="">Contact Us</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">FAQs</a></li>
+							<li><a href="">Return Policy</a></li>
+							<li><a href="">Terms Of Use</a></li>
+						</ul>
+					</div>
+					<div class="col-2">
+						<ul>
+							<li><b><u>SOCIAL</u></b></li>
+							<li><a href="">Facebook</a></li>
+							<li><a href="">Twitter</a></li>
+							<li><a href="">YouTube</a></li>
+							<li><a href="">Instagram</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-        </div>
-    </div>
+		</div>
 
-    <!-- ---------footer end--------- -->
+		<!-- ---------footer end--------- -->
 
 
 
