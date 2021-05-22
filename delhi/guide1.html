@@ -25,9 +25,9 @@
             <nav>
                     <a href="../index.html">Home</a>
                     <a href="../pilgrimage.html">Pilgrimage</a>
-                    <a href="">Contact Us</a>
-                    <a href="">About Us</a>
-                    <a href="login/login.html">Sign In</a>
+                    <a href="../contact.html">Contact Us</a>
+                    <a href="../about.html">About Us</a>
+                    <a href="../login/login.html">Sign In</a>
                 
             </nav>
         </div>
@@ -36,7 +36,7 @@
         <div class="cont-2">
             <img src="images/guidehome.jpg" class="ghome">
             <div class="check">
-                <a href="" class="btn">BOOK FOR ₹2,200/DAY</a>
+                <a  onclick="bookFunction()"  class="btn">BOOK FOR ₹2,200/DAY</a>
             </div>
             <div class="info">
                 <p>Contact: 9812114457 <br>
@@ -79,6 +79,13 @@
                     and Rajasthan.</li>
             </ul>
         </section>
+        <script>
+            function bookFunction() {
+            var b = 'Ramesh Verma 2200',
+            url = '../bookedGuide.html?n=' + encodeURIComponent(b);
+            document.location.href = url;
+            } 
+    </script>
 
 
         <!-- ---------footer start--------- -->
