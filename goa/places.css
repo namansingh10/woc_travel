@@ -60,3 +60,11 @@
 .downp {
   margin-bottom: 130px;
 }
+
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 60% !important;
+  overflow: auto;
+  display: flex;
+}
