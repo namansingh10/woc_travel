@@ -60,9 +60,15 @@ echo "hello " . $name . "<br>";
 $sql = "SELECT * FROM logintable WHERE username='$usern'";
 $result = $conn->query($sql);
 
+//default values of variable value
+$value="Error";
+
+
 if($data= $result->fetch_assoc())
 {
-  echo "Username taken!";
+  // echo "Username taken!";
+  $value="Username taken!";
+  $flag = 0;
 }
 
 else
@@ -73,7 +79,9 @@ VALUES ('$name', '$usern', '$email', '$password')";
 
 # Debug Message
 if ($conn->query($sql) === TRUE) {
-  echo "You are successfully registered";
+  // echo "You are successfully registered";
+  $value= "You are successfully registered";
+  $flag = 1;
 } 
 else {
   echo "Error: " . $sql . "<br>" . $conn->error;
@@ -84,3 +92,21 @@ else {
 $conn->close();
 
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page</title>
+</head>
+<body>
+  <?php
+
+    echo "<script>alert('$value')</script>";
+    echo "<script>if($flag==1){ location.replace('login.html') }</script>";
+    echo "<script>if($flag==0){ location.replace('sign_up.html') }</script>";
+  ?>
+</body>
+</html>
