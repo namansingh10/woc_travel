@@ -80,6 +80,14 @@ background-color: lemonchiffon;
 	padding: 20px;
 }
 
+.navbar nav {
+  position: sticky;
+  float: right;
+  left: 63% !important;
+  overflow: auto;
+  display: flex;
+}
+
 @media screen and (max-width: 700px) {
 	.row{
 		flex-direction:column;
