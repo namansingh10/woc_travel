@@ -61,6 +61,10 @@ form {
   background: #c21e1e;
 }
 
+.navbar nav {
+  left: 63% !important;
+}
+
 .alert {
   text-align: center;
   padding: 10px;
