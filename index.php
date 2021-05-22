@@ -32,7 +32,7 @@
                             echo $_SESSION['name'];
                         ?>
                     </a>
-                    <a href="pilgrimage.html">Pilgrimage</a>
+                    <a href="pilgrimage.php">Pilgrimage</a>
                     <a href="newguide.html">Become A Guide</a>
                     <a href="contact.html">Contact Us</a>
                     <a href="about.html">About Us</a>
