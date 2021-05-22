@@ -28,7 +28,7 @@
                 <a href="../pilgrimage.html">Pilgrimage</a>
                 <a href="../contact.html">Contact Us</a>
                 <a href="../about.html">About Us</a>
-                <a href="login/login.html">Sign In</a>
+                <a href="../login/login.html">Sign In</a>
 
             </nav>
         </div>
@@ -37,7 +37,7 @@
         <div class="cont-2">
             <img src="images/guidehome.jpg" class="ghome">
             <div class="check">
-                <a href="" class="btn">BOOK FOR ₹2,200/DAY</a>
+                <a onclick="bookFunction()" class="btn">BOOK FOR ₹2,200/DAY</a>
             </div>
             <div class="info">
                 <p>Contact: 9854037266 <br>
@@ -87,7 +87,13 @@
             </ul>
 
         </section>
-
+        <script>
+            function bookFunction() {
+                var b = 'Hardik Arora 2200',
+                    url = '../bookedGuide.html?n=' + encodeURIComponent(b);
+                document.location.href = url;
+            }
+        </script>
 
         <!-- ---------footer start--------- -->
 
@@ -101,8 +107,8 @@
                 <div class="row2">
                     <div class="col-2">
                         <ul>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">About Us</a></li>
+                            <li><a href="../contact.html">Contact Us</a></li>
+                            <li><a href="../about.html">About Us</a></li>
                             <li><a href="">Careers</a></li>
                             <li><a href="">FAQs</a></li>
                             <li><a href="">Return Policy</a></li>

@@ -27,7 +27,7 @@
                 <a href="../pilgrimage.html">Pilgrimage</a>
                 <a href="../contact.html">Contact Us</a>
                 <a href="../about.html">About Us</a>
-                <a href="login/login.html">Sign In</a>
+                <a href="../login/login.html">Sign In</a>
 
             </nav>
         </div>
@@ -36,7 +36,7 @@
         <div class="cont-2">
             <img src="images/guidehome.jpg" class="ghome">
             <div class="check">
-                <a href="" class="btn">BOOK FOR ₹2,200/DAY</a>
+                <a onclick="bookFunction()" class="btn">BOOK FOR ₹2,300/DAY</a>
             </div>
             <div class="info">
                 <p>Contact: 9867348938 <br>
@@ -86,7 +86,13 @@
             </ul>
 
         </section>
-
+        <script>
+            function bookFunction() {
+                var b = 'Vasudev Salgaocar 2300',
+                    url = '../bookedGuide.html?n=' + encodeURIComponent(b);
+                document.location.href = url;
+            }
+        </script>
 
         <!-- ---------footer start--------- -->
 
