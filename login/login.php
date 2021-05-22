@@ -17,17 +17,15 @@ $usern=$_POST['username'];
 $password=$_POST['password'];
 
 // SQL query for fetching user data
-$sql = "SELECT uname FROM logintable WHERE username=$usern AND password=$password";
+$sql = "SELECT uname FROM logintable WHERE username='$usern' AND pass='$password'";
+
 $result = $conn->query($sql);
 
-
-if ($result->num_rows > 0) 
+if($data= $result->fetch_assoc()) 
 {
-    if($row = $result->fetch_assoc()) {
-      echo row["uname"];
-    }
-    
+    echo "Welcome" . $data['uname'] ;
 }
+
 else 
 {
     echo "wrong credentials";
