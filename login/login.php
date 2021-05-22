@@ -25,11 +25,18 @@ $result = $conn->query($sql);
 
 $flag=0;
 
+// starting session and setting a default value
+session_start();
+$_SESSION['name']="Sign In";
+
 if($data= $result->fetch_assoc()) 
 {
     // echo "Welcome " . $data['uname'] ;
     $value= "Welcome " . $data['uname'];
     $flag=1;
+
+    // changing session variable value
+    $_SESSION['name']= $usern;
 }
 
 else 

@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +32,11 @@
                     <a href="newguide.html">Become A Guide</a>
                     <a href="contact.html">Contact Us</a>
                     <a href="about.html">About Us</a>
-                    <a href="login/login.html">Sign In</a>
+                    <a href="index.php">
+                        <?php
+                            echo $_SESSION['name'];
+                        ?>
+                    </a>
                 
             </nav>
         </div>
