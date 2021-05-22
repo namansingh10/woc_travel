@@ -50,9 +50,10 @@ $conn->close();
 </head>
 <body>
 
-  <?php
-    echo "<h1>$value</h1>"
-  ?>
+<?php
+  echo '<script>alert("Welcome")</script>';
+  echo "<h1>$value</h1>"
+?>
 
 </body>
 </html>
