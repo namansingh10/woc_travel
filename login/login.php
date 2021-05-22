@@ -4,7 +4,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "logindata";
+$dbname = "wocdata";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -63,7 +63,7 @@ $conn->close();
 
 <?php
   echo "<script>alert('$value')</script>";
-  echo "<script>if($flag==1){ location.replace('../index.php') }</script>";
+  echo "<script>if($flag==1){ location.replace('../home.php') }</script>";
   echo "<script>if($flag==0){ location.replace('login.html') }</script>";
 ?>
 

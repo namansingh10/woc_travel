@@ -27,11 +27,11 @@
                 <a href="index.html"><img src="images/logo1.png" width="150px" height="70px"></a>
             </div>
             <nav>
-                <a href="index.php">Home</a>
+                <a href="home.php">Home</a>
                 <a href="pilgrimage.php">Pilgrimage</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="contact.php">Contact Us</a>
                 <a href="">About Us</a>
-                <a href="index.php">
+                <a href="home.php">
                         <?php
                             echo $_SESSION['name'];
                         ?>

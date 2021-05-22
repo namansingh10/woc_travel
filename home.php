@@ -27,7 +27,7 @@
                 <a href="index.html"><img src="images/logo1.png" width="150px" height="70px"></a>
             </div>
             <nav>
-                    <a href="index.php">
+                    <a href="home.php">
                         <?php
                             echo $_SESSION['name'];
                         ?>
