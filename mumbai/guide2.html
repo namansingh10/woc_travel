@@ -24,9 +24,9 @@
             </div>
             <nav>
                     <a href="index.html">Home</a>
-                    <a href="">Pilgrimage</a>
-                    <a href="">Contact Us</a>
-                    <a href="">About Us</a>
+                    <a href="pilgrimage.html">Pilgrimage</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="about.html">About Us</a>
                     <a href="login/login.html">Sign In</a>
                 
             </nav>
@@ -36,7 +36,7 @@
         <div class="cont-2">
             <img src="images/guidehome.jpg" class="ghome">
             <div class="check">
-                <a href="" class="btn">BOOK FOR ₹2,300/DAY</a>
+                <a onclick="bookFunction()" class="btn">BOOK FOR ₹2,300/DAY</a>
             </div>
             <div class="info">
                 <p>Contact: 9823542427 <br>
@@ -87,7 +87,13 @@
             </ul>
 
         </section>
-
+	    <script>
+				function bookFunction() {
+				var b = 'Anjani Singh 2300',
+				url = '../bookedGuide.html?n=' + encodeURIComponent(b);
+				document.location.href = url;
+				} 
+		</script>
 
         <!-- ---------footer start--------- -->
 
