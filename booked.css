@@ -17,7 +17,9 @@ input {
 /* so that all links may look same */
 #main {
   margin-left: 10%;
+  font-size: 20px;
 }
+
 #submit {
   padding-top: 10px;
   padding-bottom: 10px;
